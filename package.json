@@ -1,0 +1,21 @@
+{
+  "name": "smm-painel",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint assets/js",
+    "lint:php": "vendor/bin/phpcs",
+    "analyze:php": "vendor/bin/phpstan analyse src",
+    "format": "prettier --write \"assets/**/*.{js,css,scss}\"",
+    "zip": "npm run build && composer install --no-dev --optimize-autoloader && bestzip smm-painel.zip * .eslintrc* .editorconfig -e node_modules tests docs assets/css assets/js vendor/*/*/.git package.json package-lock.json vite.config.js phpcs.xml phpstan.neon phpunit.xml.dist .editorconfig .gitignore .git"
+  },
+  "devDependencies": {
+    "bestzip": "^2.2.1",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "sass": "^1.60.0",
+    "vite": "^5.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "diego/smm-painel",
+    "autoload": {
+        "psr-4": {
+            "SMM\\Painel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dissoares",
+            "email": "diegosoaresyt@gmail.com"
+        }
+    ],
+    "require": {
+        "php-di/php-di": "^7.1"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "squizlabs/php_codesniffer": "^4.0",
+        "phpunit/phpunit": "^12.5",
+        "slevomat/coding-standard": "^8.28"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
