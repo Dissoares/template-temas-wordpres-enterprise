@@ -1,0 +1,51 @@
+# Theme-level .gitignore
+
+# Composer dependencies (rebuild with `composer install`)
+/vendor/
+
+# Node/tooling dependencies
+/node_modules/
+
+# Build outputs and caches
+/dist/
+/build/
+/.cache/
+
+# IDE/editor files
+/.vscode/
+/.idea/
+*.suo
+*.user
+*.userosscache
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Local environment files
+.env
+.env.*
+
+# Optional local archives
+*.zip
+# Vite & Frontend Build Artifacts
+/assets/dist/
+
+# PHP-DI Compilation Cache (Bootstrap)
+/config/cache/
+
+# QA & Testing Caches
+.phpunit.result.cache
+.phpcs-cache
+.phpstan-cache
+
+# Release/Production Packages
+*.zip
+smm-painel.zip
